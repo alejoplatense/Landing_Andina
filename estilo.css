@@ -76,6 +76,8 @@ a {
             font-variant: bold;
             background-color: rgba( 00,00, 00, 0.4);
             max-width: 50%;
+            padding: 10px;
+            font-size: 14px;
         }
 .section {
     display: flex;
