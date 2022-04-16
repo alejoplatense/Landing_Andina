@@ -1,0 +1,77 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background-image: url(img/Logo_Andina_Diseño_chico_claro-01.svg);
+}
+.padre {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    width: 100%;
+}
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: #0A458C;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    border: 1px solid #CA611F;
+    justify-content: center;
+}
+.input.espacio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.input-espacio, .msg {
+    width: 48%;
+}
+.input-espacio input, .msg textarea {
+    margin: 10px 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #CA611F;
+    padding: 10px;
+    color: white;
+    width: 95%;
+}
+.msg textarea {
+    height: 220px;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+.btn button {
+    list-style: none;
+    border: none;
+    background-color: #CA611F;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    width: 95%;
+    margin-right: 10px 20px;
+}
+.btn button:hover {
+    background-color: #ce865a;
+}
+
+@media only screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .input-espacio, .msg {
+        width: 100%;
+    }
+}
